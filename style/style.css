@@ -1,0 +1,176 @@
+@font-face {
+    font-family:'Fruktur' ;
+    src: url("../police/Fruktur.ttf");
+}
+@font-face {
+    font-family:'Noto' ;
+    src: url("../police/Noto.ttf");
+}
+*
+{
+    box-sizing: border-box;
+}
+body
+{
+    background:linear-gradient(130deg,#febf70,#ff616b);
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    height: 100vh;
+    
+    justify-content: center;
+    align-content: center;
+    overflow: hidden;
+    
+    
+ 
+}
+
+p,li
+{
+    font-family: 'Noto';
+}
+
+h1
+{
+    font-family:'Fruktur' ;
+    spacing:1px;
+}
+
+div.corps
+{ 
+      margin: auto;
+    
+    
+    padding: 20px 30px;
+    
+
+    background-color: #fee0d5;
+    height: 90%;
+    width: 90%;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+/*HEADER*/
+div.corps header
+{
+    height: 15%;
+    width: 100%;
+    padding: 10px 15px;
+   
+    display: flex;
+    align-items: center;
+}
+
+.part
+{
+    width: 50%;
+}
+div.nav
+{
+    text-align: right;
+    padding-right: 25px;
+}
+div.nav li
+{
+    display: inline-block;
+    margin:3px 15px ;
+}
+
+div.nav a
+{ text-decoration: none;
+color: black;
+font-size: 15px;
+}
+
+/*CONTENU*/
+div.contenu
+{
+    width: 100%;
+    height: 80%;
+    display: flex;
+}
+
+div.contenu .part1
+{
+    
+    display: flex;
+    flex-direction: column;
+    padding: 10px 25px;
+    text-align: justify;
+    justify-content: space-between;
+    
+    
+}
+
+/*GEstion des boutons*/
+div.contenu .part1 .btn
+{
+    margin-top: 10px ;
+    margin-left: 15px;
+
+    padding: 10px 15px;
+    border: 1px rgb(240, 101, 51) solid;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+div.contenu .part1 .btn1
+{
+    color: #fab79c;
+    background:linear-gradient(130deg,#febf70,#ff616b);
+}
+
+div.contenu .part1 .btn2
+{
+    color: #fab79c;
+    background:#fee0d5;
+}
+
+/*Face 2*/
+div.contenu .part2
+{
+    
+}
+div.contenu .part2 .forme
+{
+    position: relative;
+    top: 50px;
+    height: 200px;
+    width: 250px;
+    margin: auto;
+    border-radius: 60% 100% 75%;
+    background:linear-gradient(130deg,#febf70,#ff616b);
+}
+
+div.contenu .part2 .burger
+{
+    position: absolute;
+    bottom: 180px;
+    right: 180px;
+}
+
+/*Gestion des icones*/
+div.text
+{
+    height: 50%;
+}
+div.icone
+{
+    height: 10%;
+}
+
+/*Animation des boutons*/
+.btn:hover
+{
+    transform: translate(0,-5px);
+    transition: 1s ease-in-out;    
+}
+
+.fab
+{
+    height: 50px;
+    color: white;
+}
